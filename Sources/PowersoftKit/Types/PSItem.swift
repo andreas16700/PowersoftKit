@@ -32,6 +32,7 @@ public struct PSItem: Codable, Hashable, Identifiable {
 	
 	public var itemCode365, itemName, itemName2: String
 	public let active: Bool
+    public var ecommerce: Bool
 	public var stockStatus001: PSListStockStoresItem?
 	public let vatCode365: String
 	public let vatPercent: Int
@@ -81,6 +82,7 @@ public struct PSItem: Codable, Hashable, Identifiable {
 		case itemName = "item_name"
 		case itemName2 = "item_name_2"
 		case active
+        case ecommerce
 		case stockStatus001 = "stockStatus001"
 		case vatCode365 = "vat_code_365"
 		case vatPercent = "vat_percent"
